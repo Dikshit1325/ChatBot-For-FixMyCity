@@ -10,7 +10,7 @@ user_state = {}
 class ChatRequest(BaseModel):
     message: str
     user_id: str
-
+   
 
 @app.post("/chat")
 def chat(req: ChatRequest):
